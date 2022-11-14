@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="icon" href="icon.svg">
+		
+		<title> Chatbot </title>
+	</head>
+<body>
+    <div id="nameAssistant" style="display:none;">Chatbot</div>
+    <div id="letI" style="display:none;">¡Hola, Soy Chatbot!</div>
+	<div id="letII" style="display:none;">¿Podrías decirme cuál es tu nombre?</div>
+	<div id="letIII" style="display:none;">¿Por qué tema te gustaría comenzar?</div>
+	<div id="letIV" style="display:none;">¡Bienvenid@, <!--Cliente--> </div>
+	<div id="letV" style="display:none;">Nuestros métodos de contacto son:</div>
+	<div id="letVI" style="display:none;">¡Hasta Pronto!</div>
+	<div id="letVII" style="display:none;">¿De qué materia te gustaría tener un particular?</div>
+	<div id="letVIII" style="display:none;">
+		A. Whatsapp <br>
+		B. E-mail
+	</div>
+	<div id="letIX" style="display:none;">Por favor, ingrese su número de Whatsapp</div>
+	<div id="letX" style="display:none;">Por favor, ingrese su E-mail</div>
+	<div id="letXI" style="display:none;">Ingrese su número correctamente, sin letras ni símbolos</div>
+	<div id="letXII" style="display:none;">Ingrese un E-mail válido</div>
+	<div id="letXIII" style="display:none;">¡En breves, un particular se comunicará contigo, <!--Cliente--></div>
+	<div id="letXIV" style="display:none;">¿Por cuál tema te gustaría continuar?</div>
+    <div id="letXV" style="display:none;">
+		A. Ayudas de estudio <br>
+		B. Contactos de Profesores Particulares <br>
+		C. Salir
+	</div>
+	<div id="letXVI" style="display:none;">¡Opcion Invalida!</div>
+	<div id="letXVII" style="display:none;">
+		Métodos de estudio:
+		<br>
+		<p>A continuación te presento los links de información relacionada a técnicas de estudio, ¡Para que puedas decidir cuál es la que mejor se adapta a vos!:</p>
+		<br>
+		<a href="https://unibetas.com/tecnicas-de-estudio/" target="_blank"><img src="link.svg">Conoce los mejores 20 métodos de estudio</a>
+		<br>
+		<a href="https://www.idat.edu.pe/blog/12-tecnicas-de-estudio-para-potenciar-tu-aprendizaje" target="_blank"><img src="link.svg">12 técnicas de estudio para potenciar tu aprendizaje</a>
+		<br>
+		<a href="https://lecturaagil.com/tecnicas-de-estudio/" target="_blank"><img src="link.svg">Las 10 Mejores Técnicas de Estudio: Por orden de Efectividad</a>
+	</div>
+	<div id="letXVIII" style="display:none;">
+		Herramientas de estudio:
+		<br>
+		<p>Te recomiendo una técnica para estudiar llamada Pomodoro, un método para mejorar la administración del tiempo dedicado a una actividad:</p>
+		<br>
+		<a href="https://pomodoro-tracker.com" target="_blank"><img src="link.svg">Temporizador de la técnica pomodoro</a>
+	</div>
+	<div id="letXIX" style="display:none;">
+		Motivacion para estudiar:
+		<br>
+		<p>¡Acá podés ver la técnica Pomodoro en acción!</p>
+		<br>
+		<iframe width="300" height="200" src="https://www.youtube.com/embed/qkdUGC-izus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div id="letXX" style="display:none;">
+		Música para concentrarse:
+		<br>
+		<p>¿Te suele pasar que los ruidos no te dejan concentrarte? ¡Podés intentar poniendo estos vídeos de fondo para relajarte con sonidos de lluvia o música Lo-Fi!</p>
+		<br>
+		<iframe width="300" height="200" src="https://www.youtube.com/embed/buqt6_CjtuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<br>
+		<iframe width="300" height="200" src="https://www.youtube.com/embed/videoseries?list=PLFo9gjjUVIrhTWH_-gry8MKJocIkIadCT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Lo-fi de distintos estilos</iframe>
+	</div>
+	<div id="letXXI" style="display:none;">
+		A. Ed. Ciudadana <br>
+		B. Física <br>
+		C. Geografía <br>
+		D. Historia <br>
+		E. Inglés <br>
+		F. Lengua <br>
+		G. Matemática <br>
+		H. Volver
+	</div> 
+	<div id="letXXII" style="display:none;">
+		A. Métodos de estudio <br>
+		B. Herramientas de estudio <br>
+		C. Motivaciones para estudiar <br>
+		D. Música para concentrarse <br>
+		E. Volver
+	</div>
+	<div id="letXXIII" style="display:none;">Nuestras Materias para Particulares son:</div>
+	<div id="letMail" style="display:none;">EduBoti@gmail.com</div>
+    
+	<!-- input para introducir el texto y el botón para enviar -->
+	<div id="contGral">
+	  	<div id="contAssistant"></div>
+	  	<form id="barTextCliente" method="dialog" action="">
+		    <input type="text" id="readText" placeholder="Escribir..."></input>
+		    <button id="btnReadText" onclick="">Enviar</button>
+		</form>
+    </div>
+
+    <script src="js/codigo.js"></script>
+</body>
+</html>
